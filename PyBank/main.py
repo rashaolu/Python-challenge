@@ -15,7 +15,7 @@ with open(csvpath, encoding='utf-8-sig') as csvfile:
     csvheader=next(csvfile)
     # print(f"Header:{csvheader}") 
 
-# Define sum_revenue to add up calues of profit/loss list
+# Define sum_revenue to add up values of profit/loss list
     def sum_revenue(csvreader):
         total=0
         for row in csvreader:
@@ -77,21 +77,3 @@ file.write(f'Total: ${total_sum} \n')
 file.write(f' Average Change: ${total_change} \n')
 file.write(f' Greatest Increase in Profits: {max_date} (${greatest_increase}) \n')
 file.write(f' Greatest Decrease in Profits: {min_date} (${greatest_decrease}) \n')
-
-
-
-
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
